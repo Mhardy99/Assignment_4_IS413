@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" type="image/x-icon" href="~/favicon.ico" />
+    <!--This is where I import the bootstrap-->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <! -- basic navigation for the website-->
+            <a asp-action="RestaurantList">List of Restaurants</a>
+            <a asp-action="EnterRestaurant">Enter a Restaurant</a>
+            <a asp-action="Index">Home</a>
+        </nav>
+    </header>
+    <h1>@ViewBag.title</h1>
+
+    @RenderBody()
+
+    <br />
+    <! -- Where I set the footer -->
+    <footer>Miller Hardy 2021</footer>
+
+</body>
+
+</html>

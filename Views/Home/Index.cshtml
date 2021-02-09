@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Restaurant Home Page";
+}
+@model IEnumerable<string>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Top 5 Provo Restaurants</title>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <header>
+        <h1>Top 5 Provo Restaurants</h1>
+    </header>
+
+    <ul>
+        @foreach (string i in Model)
+        { //lists each item in the array
+            <li>@i</li>           
+        }
+    
+    </ul>
+</body>
+</html>
